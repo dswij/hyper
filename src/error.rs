@@ -595,8 +595,10 @@ impl fmt::Display for TimedOut {
 
 impl StdError for TimedOut {}
 
+#[allow(dead_code)]
 pub struct Code(Kind);
 
+#[allow(unused)]
 impl Code {
     pub const CANCELED: Code = Code(Kind::Canceled);
     pub const PARSE_ERROR: Code = Code(Kind::Parse(Parse::Internal));
