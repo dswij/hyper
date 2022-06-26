@@ -595,6 +595,16 @@ impl fmt::Display for TimedOut {
 
 impl StdError for TimedOut {}
 
+pub struct Code(Kind);
+
+impl Code {
+    pub const CANCELED: Code = Code(Kind::Canceled);
+    pub const PARSE_ERROR: Code = Code(Kind::Parse(Parse::Internal));
+    pub const TOO_LARGE: Code = Code(Kind::Parse(Parse::TooLarge));
+    pub const INVALID_HTTP_STATUS: Code = Code(Kind::Parse(Parse::Status));
+    pub const CHANNEL_CLOSED: Code = Code(Kind::ChannelClosed);
+}
+
 #[cfg(test)]
 mod tests {
     use super::*;
