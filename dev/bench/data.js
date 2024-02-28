@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1704960607213,
+  "lastUpdate": 1709113351939,
   "repoUrl": "https://github.com/dswij/hyper",
   "entries": {
     "connect": [
@@ -12301,6 +12301,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 47536,
             "range": "± 8441",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e77c839a591f3685d851c96664ab29f8c45c45a2",
+          "message": "docs(contrib): make Noah-Kennedy a collaborator (#3584)",
+          "timestamp": "2024-02-26T15:59:32-06:00",
+          "tree_id": "8325d45c68b18a5ece677e344f76e6281fb190d3",
+          "url": "https://github.com/dswij/hyper/commit/e77c839a591f3685d851c96664ab29f8c45c45a2"
+        },
+        "date": 1709113350277,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 46260,
+            "range": "± 9254",
             "unit": "ns/iter"
           }
         ]
