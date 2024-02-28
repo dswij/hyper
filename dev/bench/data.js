@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1709113351939,
+  "lastUpdate": 1709113420872,
   "repoUrl": "https://github.com/dswij/hyper",
   "entries": {
     "connect": [
@@ -40593,6 +40593,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 5077289,
             "range": "± 123611",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "e77c839a591f3685d851c96664ab29f8c45c45a2",
+          "message": "docs(contrib): make Noah-Kennedy a collaborator (#3584)",
+          "timestamp": "2024-02-26T15:59:32-06:00",
+          "tree_id": "8325d45c68b18a5ece677e344f76e6281fb190d3",
+          "url": "https://github.com/dswij/hyper/commit/e77c839a591f3685d851c96664ab29f8c45c45a2"
+        },
+        "date": 1709113419286,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 69304,
+            "range": "± 3316",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 4168241,
+            "range": "± 108268",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 22478,
+            "range": "± 442",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 25005,
+            "range": "± 606",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 34266,
+            "range": "± 589",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 100745,
+            "range": "± 4160",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 38591,
+            "range": "± 1410",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 97373,
+            "range": "± 3627",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 25580613,
+            "range": "± 33823396",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 7864374,
+            "range": "± 444535",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 7701435,
+            "range": "± 114408",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 49171946,
+            "range": "± 413022",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 83999712,
+            "range": "± 8952643",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5057778,
+            "range": "± 131084",
             "unit": "ns/iter"
           }
         ]
