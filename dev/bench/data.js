@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1711907067346,
+  "lastUpdate": 1711907128740,
   "repoUrl": "https://github.com/dswij/hyper",
   "entries": {
     "connect": [
@@ -40731,6 +40731,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 5057778,
             "range": "± 131084",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "artem.medvedev@workato.com",
+            "name": "Artem Medvedev",
+            "username": "DDtKey"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "6ecf85218fb24531184c53d5ed0eb7caf13cdcef",
+          "message": "fix: avoid  `graceful_shutdown` panic on upgraded H1 connection (#3616)",
+          "timestamp": "2024-03-31T23:30:30+08:00",
+          "tree_id": "ca16b5388a96e5dde6e93839fbf19808f4e30ebd",
+          "url": "https://github.com/dswij/hyper/commit/6ecf85218fb24531184c53d5ed0eb7caf13cdcef"
+        },
+        "date": 1711907126984,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 68940,
+            "range": "± 4088",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 4150060,
+            "range": "± 58472",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 21620,
+            "range": "± 729",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 24115,
+            "range": "± 661",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 33437,
+            "range": "± 911",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 103297,
+            "range": "± 10025",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 37949,
+            "range": "± 1142",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 95844,
+            "range": "± 3489",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 25588948,
+            "range": "± 33812235",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 17617175,
+            "range": "± 17952537",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 7750260,
+            "range": "± 85593",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 50041548,
+            "range": "± 438150",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 50010376,
+            "range": "± 1361485",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5094659,
+            "range": "± 69191",
             "unit": "ns/iter"
           }
         ]
