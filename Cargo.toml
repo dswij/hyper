@@ -23,6 +23,7 @@ include = [
 bytes = "1"
 http = "1"
 http-body = "1"
+h3 = "*"
 tokio = { version = "1", features = ["sync"] }
 
 # Optional

@@ -16,6 +16,8 @@ cfg_feature! {
 #[cfg(feature = "http2")]
 pub(crate) mod h2;
 
+pub(crate) mod h3;
+
 /// An Incoming Message head. Includes request/status line, and headers.
 #[cfg(feature = "http1")]
 #[derive(Debug, Default)]
