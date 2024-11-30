@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1715311682167,
+  "lastUpdate": 1732981266711,
   "repoUrl": "https://github.com/dswij/hyper",
   "entries": {
     "connect": [
@@ -12421,6 +12421,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 46328,
             "range": "± 9414",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0eb1b6cf4d914ce9c3f8e92a8b43754eba27a327",
+          "message": "fix(server): start header read timeout immediately (#3185)\n\nThe `http1_header_read_timeout` used to start once there was a single\r\nread of headers. This change makes it start the timer immediately, right\r\nwhen the connection is estabilished.",
+          "timestamp": "2024-06-03T15:18:14-04:00",
+          "tree_id": "371e1352e31dd1c5881868d136aaf626604fc9bd",
+          "url": "https://github.com/dswij/hyper/commit/0eb1b6cf4d914ce9c3f8e92a8b43754eba27a327"
+        },
+        "date": 1732981265061,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 46590,
+            "range": "± 9359.94",
             "unit": "ns/iter"
           }
         ]
