@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1732981266711,
+  "lastUpdate": 1732981317369,
   "repoUrl": "https://github.com/dswij/hyper",
   "entries": {
     "connect": [
@@ -41145,6 +41145,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 5053644,
             "range": "± 86631",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "0eb1b6cf4d914ce9c3f8e92a8b43754eba27a327",
+          "message": "fix(server): start header read timeout immediately (#3185)\n\nThe `http1_header_read_timeout` used to start once there was a single\r\nread of headers. This change makes it start the timer immediately, right\r\nwhen the connection is estabilished.",
+          "timestamp": "2024-06-03T15:18:14-04:00",
+          "tree_id": "371e1352e31dd1c5881868d136aaf626604fc9bd",
+          "url": "https://github.com/dswij/hyper/commit/0eb1b6cf4d914ce9c3f8e92a8b43754eba27a327"
+        },
+        "date": 1732981315813,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 68508,
+            "range": "± 4532.21",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 4174176,
+            "range": "± 154727.41",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 22085,
+            "range": "± 675.50",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 24320,
+            "range": "± 479.95",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 34158,
+            "range": "± 1683.68",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 99478,
+            "range": "± 1428.85",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 38145,
+            "range": "± 1783.04",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 94887,
+            "range": "± 16607.64",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 24832400,
+            "range": "± 33159732.23",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 7824471,
+            "range": "± 165615.25",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 7566711,
+            "range": "± 184941.29",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 49803901,
+            "range": "± 685104.78",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 50488744,
+            "range": "± 665573.40",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5085820,
+            "range": "± 94674.45",
             "unit": "ns/iter"
           }
         ]
