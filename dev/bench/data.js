@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1732981317369,
+  "lastUpdate": 1786374346297,
   "repoUrl": "https://github.com/dswij/hyper",
   "entries": {
     "connect": [
@@ -12451,6 +12451,36 @@ window.BENCHMARK_DATA = {
             "name": "hello_world_16",
             "value": 46590,
             "range": "± 9359.94",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7688ee323860e471e5a460ff28fe9993aae7d1c2",
+          "message": "chore(docs): delete empty .github/PULL_REQUEST_TEMPLATE",
+          "timestamp": "2026-08-10T09:28:53-04:00",
+          "tree_id": "38ce711b969e541c9d5a7c0c94d2b599a837431d",
+          "url": "https://github.com/dswij/hyper/commit/7688ee323860e471e5a460ff28fe9993aae7d1c2"
+        },
+        "date": 1786374343967,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "hello_world_16",
+            "value": 42398,
+            "range": "± 7108.83",
             "unit": "ns/iter"
           }
         ]
