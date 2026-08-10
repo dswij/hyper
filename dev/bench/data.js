@@ -1,5 +1,5 @@
 window.BENCHMARK_DATA = {
-  "lastUpdate": 1786374346297,
+  "lastUpdate": 1786374473371,
   "repoUrl": "https://github.com/dswij/hyper",
   "entries": {
     "connect": [
@@ -41283,6 +41283,114 @@ window.BENCHMARK_DATA = {
             "name": "http2_parallel_x10_res_1mb",
             "value": 5085820,
             "range": "± 94674.45",
+            "unit": "ns/iter"
+          }
+        ]
+      },
+      {
+        "commit": {
+          "author": {
+            "email": "sean@seanmonstar.com",
+            "name": "Sean McArthur",
+            "username": "seanmonstar"
+          },
+          "committer": {
+            "email": "noreply@github.com",
+            "name": "GitHub",
+            "username": "web-flow"
+          },
+          "distinct": true,
+          "id": "7688ee323860e471e5a460ff28fe9993aae7d1c2",
+          "message": "chore(docs): delete empty .github/PULL_REQUEST_TEMPLATE",
+          "timestamp": "2026-08-10T09:28:53-04:00",
+          "tree_id": "38ce711b969e541c9d5a7c0c94d2b599a837431d",
+          "url": "https://github.com/dswij/hyper/commit/7688ee323860e471e5a460ff28fe9993aae7d1c2"
+        },
+        "date": 1786374470431,
+        "tool": "cargo",
+        "benches": [
+          {
+            "name": "http1_consecutive_x1_both_100kb",
+            "value": 70307,
+            "range": "± 3488.45",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_both_10mb",
+            "value": 4115927,
+            "range": "± 110827.59",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_empty",
+            "value": 21454,
+            "range": "± 1579.07",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http1_consecutive_x1_req_10b",
+            "value": 23444,
+            "range": "± 1019.98",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_empty",
+            "value": 31804,
+            "range": "± 11825.92",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_100kb",
+            "value": 102011,
+            "range": "± 1300.13",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_consecutive_x1_req_10b",
+            "value": 41000030,
+            "range": "± 5047.62",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_empty",
+            "value": 83295,
+            "range": "± 1570.31",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks",
+            "value": 16307330,
+            "range": "± 16310289.09",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_adaptive_window",
+            "value": 16362871,
+            "range": "± 8187869.54",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10kb_100_chunks_max_window",
+            "value": 7733706,
+            "range": "± 429078.97",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_req_10mb",
+            "value": 52138360,
+            "range": "± 1209390.39",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_10mb",
+            "value": 52845141,
+            "range": "± 453871.98",
+            "unit": "ns/iter"
+          },
+          {
+            "name": "http2_parallel_x10_res_1mb",
+            "value": 5430209,
+            "range": "± 69399.96",
             "unit": "ns/iter"
           }
         ]
